@@ -91,4 +91,22 @@ extra:
 
 nav:
   - Home: index.md
+  - 前言: preface.md
+  - 贡献者: 
+    - Contributor/index.md
+    - Contributor/contribute.md
+  - 大学:
+    - University/index.md
+    - 浙江大学:
+      - University/Zhejiang University/index.md
+      - University/Zhejiang University/freshman.md
+      - 专业:
+        - University/Zhejiang University/major/index.md
+        - University/Zhejiang University/major/mix.md
+        - University/Zhejiang University/major/information technology.md
+  - 高中:
+    - High School/index.md
+  - 生活: 
+    - Life/index.md
+  - 后记: postscript.md
   
