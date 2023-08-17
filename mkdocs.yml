@@ -1,0 +1,94 @@
+site_name: 陇上青年
+site_url: https://yaoyaolingbro.github.io/youth
+site_author: yaoyaoling
+
+repo_url: https://github.com/Yaoyaolingbro/youth
+repo_name: youth
+
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    # - navigation.sections
+    - navigation.prune
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    #　- navigation.expand
+    - navigation.tracking
+    - navigation.top
+    - header.autohide
+    - search.highlight
+    - search.share
+    - search.suggest
+    # - toc.integrate
+    - content.code.copy
+    - content.code.annotate
+    
+    
+  palette:
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: grey
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: cyan
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+
+  
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - footnotes
+  - meta # 支持markdown博客文件头的元数据，比如标题
+  - toc:
+      permalink: "#"
+      baselevel: 1
+      separator: "_"
+  - admonition  # 支持提示块
+  - pymdownx.details  # 提示块可折叠
+  - attr_list 
+  - pymdownx.inlinehilite # 支持行内语法高亮
+  # - pymdownx.highlight: # 支持代码块语法高亮，！！！跟mermaid冲突
+  #     linenums: true # 显示行号
+  - pymdownx.superfences: # 可在列表等处嵌入块
+      # make exceptions to highlighting of code:
+      custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:mermaid2.fence_mermaid
+
+plugins:
+  - search:
+      lang: zh
+  # - git-revision-date-localized
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Yaoyaolingbro/youth/home
+  analytics:
+    provider: google
+    property: G-KJB4RXSKZG
+
+
+nav:
+  - Home: index.md
+  
